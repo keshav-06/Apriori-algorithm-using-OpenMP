@@ -16,7 +16,7 @@ The **APRIORI ALGORITHM**, a well-known Association Rule Mining algorithm, aids 
 
 ### Architecture:
 
-![Parallel Diagram](![apriori](https://github.com/keshav-06/Apriori-algorithm-using-OpenMP/assets/87660591/4f4d2683-ea09-415e-ab00-2a15042dfd75)
+![apriori](https://github.com/keshav-06/Apriori-algorithm-using-OpenMP/assets/87660591/4f4d2683-ea09-415e-ab00-2a15042dfd75)
 
 ### Parallelising Serial Code -
 Since the implementation of Apriori algorithm include 9 functions, it is very important to recognize the part of the code to be parallelized. The Apriori algorithm is itself an iterative algorithm and each iteration depends on the values obtained by the previous one, i.e. there exists a real loop dependency between the iterations. Since each iteration take significant amount of time, each iteration needs to be parallelized. From the previous studies, it has been found that about 90% of the time is consumed in scanning the transactions in the database to find out whether a particular candidate is present in the transaction or not. The function which scansthe database if scan_D() . It also calls set_count to calculate the support for each candidate which also contributes to the large amount of the time spent. 
