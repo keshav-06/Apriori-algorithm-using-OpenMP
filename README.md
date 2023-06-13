@@ -24,5 +24,8 @@ I use data decomposition technique to divide our transaction data into the numbe
 These counts for all the threads are added in the critical section. 
 The critical section in the program is implemented using Barrier Synchronization. barrier synchronization has been used to add the calculated set_count values and find the final support for each candidate. A barrier for a group of threads in a section of code means that any thread /process must stop at this point and cannot proceed until all other threads/processes reach this barrier. So, in our code, until all the threads calculate the set_count for each candidate,the summation of set_counts cannot be done.
 
+![flow](https://github.com/keshav-06/Apriori-algorithm-using-OpenMP/assets/87660591/abe55d89-4618-461d-9f43-4e5e9d162f2d)
+
+The above picture shows the flow of executuion.
 
 
