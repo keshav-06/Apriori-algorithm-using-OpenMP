@@ -30,4 +30,3 @@ The above picture shows the flow of executuion.
 
 ## Conclusion
 Thus, the parallel implementation of the Apriori algorithm reduces the time taken for the algorithm to scan the database. This increases the efficiency of the algorithm and also makes it more usable for real time applications. 
-
